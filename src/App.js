@@ -7,6 +7,7 @@ import Presentation from './app/components/Presentation';
 import WithInst from './app/components/WithInst';
 import Items from './app/components/Items';
 import TableImg from './app/components/TableImg';
+import Footer from './app/components/Footer';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Presentation />
             <WithInst />
             <TableImg />
+            <Footer />
         </div>
     );
 }

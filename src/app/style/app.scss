@@ -16,8 +16,8 @@ body {
     background-color: #f4e5d6;
 
 }
+//___________________________________________Main______________________________________________________________________________
 
-// Main
 .block {
     position: relative;
     color: $color-text;
@@ -37,10 +37,8 @@ body {
     z-index: 1;
     height: 900px;
 }
+//____________________________________________Navbar_____________________________________________________________________________
 
-
-
-// Navbar
 .navigate {
     
     display: flex;
@@ -67,8 +65,8 @@ body {
     z-index: 3;
    
 }
+//___________________________________________Capsule Collection______________________________________________________________________________
 
-// Capsule Collection
 .main-text {
     position: relative;
     display: inline-block;
@@ -81,7 +79,8 @@ body {
     cursor: pointer;
     opacity: $opacity;
 }
-// Header
+//______________________________________________Header___________________________________________________________________________
+
 .top {
     position: fixed;
     z-index: 2;
@@ -92,8 +91,8 @@ body {
 .top a:hover{
     opacity: $opacity;
 }
+//_____________________________________________Boltaeva____________________________________________________________________________
 
-// Boltaeva
 .logo {
     display: block;
     text-transform: uppercase;
@@ -106,13 +105,15 @@ body {
 .logo p:hover {
     opacity: $opacity;
 }
+//_______________________________________________Close menu__________________________________________________________________________
 
-// Close menu
+
 .burger {
     display: none;
 }
+//________________________________________________Items_________________________________________________________________________
 
-// Items
+
 .content {
     display: inline-block;
     position: relative;
@@ -121,8 +122,8 @@ body {
     left: 3%;
     width: 100%;
 }
+//____________________________________________________4 x 2_____________________________________________________________________
 
-// 4 x 2
 .items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -139,14 +140,15 @@ body {
     height: 430px;
 }
 
-// Presentation
+// _________________________________________________Presentation____________________________________________________________________-
 .present-container {
     display: flex;
     position: relative;
     top: 80vh;
 }
+//_____________________________________________________WithInst____________________________________________________________________
 
-// WithInst
+
 .with-inst {
     display: flex;
     align-items: center;
@@ -176,6 +178,7 @@ body {
     }
 }
 
+//______________________________Presentation______________________________________________________________________________________
 .present-container img {
     width: 720px;
     height: 900px;
@@ -201,8 +204,9 @@ margin-right: 10vw;
         opacity: 0.2;
     }
 }
+//______________________________________________________________TableImg:___________________________________________________________
 
-// TableImg:
+
 .contaier-table {
     position: relative;
     display: grid;
@@ -219,6 +223,58 @@ margin-right: 10vw;
         height:  309px;
     }
 }
+//___________________________________________________________Footer______________________________________________________________
+
+ 
+.footer {
+    position: relative;
+    top: 110vh;
+    bottom: 20%;
+    background-color: #EEE4DA;
+    .nav-footer li{
+        padding-bottom: 10%;
+        list-style-type: none;
+    }
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #AC8F78;
+        padding: 5% 0 5% 0;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5%;
+        
+        section {
+            width: 20%;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+    .contact-icons {
+        display: flex;
+        justify-content:space-evenly;
+    }
+  
+
+    .ellipse {
+        display: flex;
+        background-color: #F5ECE3;
+        border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: #AC8F78;
+      }
+    }
+}
+
+//______________________________________________________________1250px__________________________________________________________________
+
 @media (max-width: 1250px) {
     .items {
 grid-template-columns: repeat(3, 1fr);
@@ -233,11 +289,9 @@ grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 10px;
 grid-row-gap: 20px;
     }
-
-    
 }
+//______________________________________________________800px___________________________________________________________________
 
-// 
 @media (max-width: 800px) {
     .navigate {
         display: none;
@@ -261,7 +315,8 @@ grid-row-gap: 20px;
             height: 468px;
         }
     }
-// open menu
+    //__________________________________________________open menu_______________________________________________________________________
+
     .navigate-active {
         display: flex;
         flex-direction: column;
@@ -344,6 +399,14 @@ grid-column-gap: 10px;
 grid-row-gap: 20px;
     }
 }
+//___________________________________________________370px______________________________________________________________________
+
+@media (max-height: 370px) {
+    .nav {
+        flex-direction: row;
+    }
+}
+//____________________________________________________630px_____________________________________________________________________
 
 @media (max-width: 630px) {
     // 1 x 8
