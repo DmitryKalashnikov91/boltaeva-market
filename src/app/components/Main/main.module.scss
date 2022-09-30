@@ -1,0 +1,59 @@
+$color-text: #FAF9F9;
+$opacity: 0.6;
+
+.block {
+    position: relative;
+    color: $color-text;
+    height: 100%;
+    padding-left: 35vw;
+}
+.bg {
+    background:#F5ECE3 url('../../../assets/background.png');
+    position: absolute;
+    border-radius: 25px 25px 0 0;
+    // чтобы фон смещался вместе с контентом:
+    background-position: 77% 23%;
+    top: 0;
+    right: 3%;
+    bottom: 0;
+    left: 3%;
+    z-index: 1;
+    height: 900px;
+}
+.main_text {
+    position: relative;
+    display: inline-block;
+    padding-top: 60vh;
+    font-size: 48px;
+    border-bottom: 0.1vw solid $color-text;
+    z-index: 2;
+}
+.main_text p:hover {
+    cursor: pointer;
+    opacity: $opacity;
+}
+.top {
+    position: fixed;
+    z-index: 2;
+    padding-top: 25px;
+
+}
+
+.top a:hover{
+    opacity: $opacity;
+}
+
+@media (max-width: 800px) {
+.main_text {
+    margin-left: -20vw;
+    font-size: 35px;
+    white-space: nowrap;
+}
+.bg {
+    border-radius: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+}

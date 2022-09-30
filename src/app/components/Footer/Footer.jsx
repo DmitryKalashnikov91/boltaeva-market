@@ -1,40 +1,41 @@
 import React from 'react';
-import fb from '../../assets/fb.png';
-import vk from '../../assets/vk.png';
+import styles from './footer.module.scss';
+import fb from '../../../assets/fb.png';
+import vk from '../../../assets/vk.png';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className={styles.footer}>
             <h3>Boltaeva</h3>
             <hr />
             <footer>
-                <section>
+                <section className={styles.company_section}>
                     <span>Company</span>
                     <p className='pt-5'>
                         The brand strives to create respect for its products among the audience, so
                         that the presence of the company's products is a sign of prestige.
                     </p>
-                    <div className='contact-icons'>
-                        <div role='button' className='ellipse'>
+                    <div className={styles.contact_icons}>
+                        <div role='button' className={styles.ellipse}>
                             <img src={fb} alt='facebook' />
                         </div>
-                        <div role='button' className='ellipse'>
-                            <i class='bi bi-instagram'></i>
+                        <div role='button' className={styles.ellipse}>
+                            <i className='bi bi-instagram'></i>
                         </div>
-                        <div role='button' className='ellipse'>
-                            <i class='bi bi-twitter'></i>
+                        <div role='button' className={styles.ellipse}>
+                            <i className='bi bi-twitter'></i>
                         </div>
-                        <div role='button' className='ellipse'>
-                            <i class='bi bi-youtube'></i>
+                        <div role='button' className={styles.ellipse}>
+                            <i className='bi bi-youtube'></i>
                         </div>
-                        <div role='button' className='ellipse'>
+                        <div role='button' className={styles.ellipse}>
                             <img src={vk} alt='vkontakte' />
                         </div>
                     </div>
                 </section>
-                <section>
+                <section className={styles.nav_section}>
                     <span>Navigation</span>
-                    <ul className='nav-footer pt-5'>
+                    <ul className={`${styles.nav_footer} pt-5`}>
                         <li>Product catalog</li>
                         <li>About company</li>
                         <li>Bonus program</li>
@@ -43,9 +44,9 @@ const Footer = () => {
                         <li>Privacy Policy</li>
                     </ul>
                 </section>
-                <section>
+                <section className={styles.products_section}>
                     <span>Products</span>
-                    <ul className='nav-footer pt-5'>
+                    <ul className={`${styles.nav_footer} pt-5`}>
                         <li>Care cosmetics</li>
                         <li>Eyebrow cosmetics</li>
                         <li>Decorative cosmetics</li>
@@ -54,16 +55,16 @@ const Footer = () => {
                         <li>Accessories</li>
                     </ul>
                 </section>
-                <section>
+                <section className={styles.contacts_section}>
                     <span>Contacts</span>
                     <p className='pt-5'>
                         We are open to new opportunities, so you can contact our company
                         representatives for any questions
                     </p>
-                    <div className='contact-icons'>
-                        <i class='bi bi-envelope'></i>
+                    <div className={styles.contact_icons}>
+                        <i className='bi bi-envelope'></i>
                         <p>E-mail</p>
-                        <i class='bi bi-whatsapp'> </i>
+                        <i className='bi bi-whatsapp'> </i>
                         <p>Watsapp</p>
                     </div>
                 </section>
@@ -72,4 +73,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export { Footer };
