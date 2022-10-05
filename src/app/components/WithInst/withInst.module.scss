@@ -1,0 +1,44 @@
+.with_inst {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 90vh;
+    left: 70px;
+    right: 30vw;
+    margin-right: 15%;  
+    p {
+    font-size: 48px;
+    letter-spacing: -2%;
+    width: 80%;
+
+    }
+    .btn {
+      width: 310px;
+      height: 80px;
+      color: #AC8F78;
+      background: #EEE4DA;
+      border-radius: 66px;
+      border: none;
+    }
+     
+    .btn:hover{
+        color: #403022;
+        background: #efcbad;
+    }
+}
+
+@media (max-width: 800px) {
+    .with_inst p {
+            font-size: 24px;
+        }
+       
+    }
+    @media (max-width: 630px) {
+        .with_inst {
+            flex-direction: column;
+            margin-top: -50px;
+            align-items: center;
+        }
+     
+    } 
