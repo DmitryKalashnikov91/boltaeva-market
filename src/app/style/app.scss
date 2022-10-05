@@ -1,18 +1,17 @@
 // импорт шрифта:
 @import url("fonts/stylesheet.css");
 
-// Переменные
 
-
-// сброс отступов браузера
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+
+
 body {
     background-color: #f4e5d6;
-
+    height:fit-content;
 }
 
 

@@ -32,6 +32,8 @@ margin-right: 10vw;
 @media (max-width: 1250px) {
     .present_container {
         flex-direction: column-reverse;
+        margin-top: -100px;
+        margin-left: 7%;
         .about {
             font-size: 24px;
             font-weight: 400;

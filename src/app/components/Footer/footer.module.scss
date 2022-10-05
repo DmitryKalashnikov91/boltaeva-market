@@ -2,6 +2,8 @@
     position: relative;
     top: 110vh;
     bottom: 20%;
+    right: 50%;
+    left: 0;
     background-color: #EEE4DA;
     .nav_footer li{
         padding-bottom: 10%;
@@ -20,9 +22,15 @@
         
         section {
             width: 20%;
+            i:active, i:hover, i {
+                text-decoration: none;
+                color: black;
+            }
         }
+        
         span {
             font-size: 20px;
+            padding-bottom: 5%;
         }
     }
     .contact_icons {
@@ -45,13 +53,15 @@
     }
 }
 @media (max-width: 630px) {
-    .footer footer {
+    .footer {
+        top: 100vh;
+        footer {
         display: block;
         align-items: center;
         text-align: center;
-        margin: 0 5% 10% 25%;
-        width: 226%;
-    }
+        margin: 0 0 10% 25%;
+        width:300%;
+    }} 
     .nav_section, .products_section, .contacts_section p {
         display: none;
     }

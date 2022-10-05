@@ -1,5 +1,9 @@
 import React from 'react';
+
+// Styles
 import styles from './footer.module.scss';
+
+// Images
 import fb from '../../../assets/fb.png';
 import vk from '../../../assets/vk.png';
 
@@ -11,7 +15,7 @@ const Footer = () => {
             <footer>
                 <section className={styles.company_section}>
                     <span>Company</span>
-                    <p className='pt-5'>
+                    <p>
                         The brand strives to create respect for its products among the audience, so
                         that the presence of the company's products is a sign of prestige.
                     </p>
@@ -62,9 +66,13 @@ const Footer = () => {
                         representatives for any questions
                     </p>
                     <div className={styles.contact_icons}>
-                        <i className='bi bi-envelope'></i>
+                        <a href='mailto:kobe-24-8@mail.ru'>
+                            <i className='bi bi-envelope'></i>
+                        </a>
                         <p>E-mail</p>
-                        <i className='bi bi-whatsapp'> </i>
+                        <a href='tel:+79999152567'>
+                            <i className='bi bi-whatsapp'></i>
+                        </a>
                         <p>Watsapp</p>
                     </div>
                 </section>

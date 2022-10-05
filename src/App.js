@@ -8,6 +8,7 @@ import { Main } from './app/components/Main';
 import { Presentation } from './app/components/Presentation';
 import { TableImg } from './app/components/TableImg';
 import { WithInst } from './app/components/WithInst';
+import { ArrowUp } from './app/ui/ArrowUp';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <WithInst />
             <TableImg />
             <Footer />
+            <ArrowUp />
         </div>
     );
 }
