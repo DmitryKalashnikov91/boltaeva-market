@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    top: 110vh;
+    top: 30vh;
     bottom: 20%;
     right: 50%;
     left: 0;
@@ -54,7 +54,6 @@
 }
 @media (max-width: 630px) {
     .footer {
-        top: 100vh;
         footer {
         display: block;
         align-items: center;
