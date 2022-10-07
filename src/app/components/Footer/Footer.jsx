@@ -1,11 +1,5 @@
-import React from 'react';
-
 // Styles
 import styles from './footer.module.scss';
-
-// Images
-import fb from '../../../assets/fb.png';
-import vk from '../../../assets/vk.png';
 
 const Footer = () => {
     return (
@@ -21,19 +15,19 @@ const Footer = () => {
                     </p>
                     <div className={styles.contact_icons}>
                         <div role='button' className={styles.ellipse}>
-                            <img src={fb} alt='facebook' />
+                            <span>f</span>
                         </div>
                         <div role='button' className={styles.ellipse}>
-                            <i className='bi bi-instagram'></i>
+                            <span className='bi bi-instagram'></span>
                         </div>
                         <div role='button' className={styles.ellipse}>
-                            <i className='bi bi-twitter'></i>
+                            <span className='bi bi-twitter'></span>
                         </div>
                         <div role='button' className={styles.ellipse}>
-                            <i className='bi bi-youtube'></i>
+                            <span className='bi bi-youtube'></span>
                         </div>
                         <div role='button' className={styles.ellipse}>
-                            <img src={vk} alt='vkontakte' />
+                            <span>vk</span>
                         </div>
                     </div>
                 </section>

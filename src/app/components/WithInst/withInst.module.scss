@@ -8,10 +8,14 @@
     right: 30vw;
     margin-right: 15%;  
     p {
-    font-size: 48px;
-    letter-spacing: -2%;
-    width: 80%;
-
+        font-size: 48px;
+        letter-spacing: -2%;
+        width: 80%;
+        button, 
+        button:active, 
+        button:focus {
+            outline: none;
+        }
     }
     .btn {
       width: 310px;
@@ -32,7 +36,6 @@
     .with_inst p {
             font-size: 24px;
         }
-       
     }
     @media (max-width: 630px) {
         .with_inst {

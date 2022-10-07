@@ -2,8 +2,6 @@
 import { NavBar } from '../NavBar';
 import styles from './main.module.scss';
 
-// Components
-
 const Main = () => {
     return (
         <>

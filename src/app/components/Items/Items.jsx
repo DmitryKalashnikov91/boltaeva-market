@@ -1,6 +1,3 @@
-// Libraries
-import React from 'react';
-
 // Styles
 import styles from './items.module.scss';
 

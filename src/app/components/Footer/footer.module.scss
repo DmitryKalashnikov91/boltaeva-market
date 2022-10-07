@@ -47,9 +47,20 @@
       height: 36px;
       align-items: center;
       justify-content: center;
-      i {
+      
+      > span {
+        font-weight: 700;
         color: #AC8F78;
+        caret-color: transparent;
       }
+      > span:hover {
+        color: #000;
+        transform: scale(1.2);
+      }
+      
+    }
+    .ellipse:nth-child(5) {
+        letter-spacing: -3px;
     }
 }
 @media (max-width: 630px) {

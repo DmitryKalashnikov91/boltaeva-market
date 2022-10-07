@@ -6,15 +6,15 @@ import { Nav } from 'react-bootstrap';
 import styles from './navBar.module.scss';
 
 const NavBar = () => {
-    // состояние "бургер" меню
+    // state of 'burger-menu'
     const [active, setActive] = useState(false);
 
-    // динамические классы
+    // dinamic classes
     let navigateStyle = `${styles.navigate}`;
     navigateStyle += active ? ` ${styles.active}` : '';
     let shadowStyle = !active ? ' nav shadow' : '';
 
-    // Изменение состояния при нажатии
+    // change state burger
     const handleClick = () => {
         setActive((prevstate) => !prevstate);
     };
